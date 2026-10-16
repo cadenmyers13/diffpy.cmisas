@@ -11,8 +11,8 @@
   "package_dir_name": "diffpy.cmisas",
   "project_short_description": "The code of the SAS pack of the diffpy.cmi package.",
   "project_keywords": "Small angle scattering, PDF, x-ray neutron",
-  "minimum_supported_python_version": "3.12",
-  "maximum_supported_python_version": "3.14",
+  "minimum_supported_python_version": "3.11",
+  "maximum_supported_python_version": "3.13",
   "project_needs_c_code_compiled": "No",
   "project_has_gui_tests": "No"
 }
