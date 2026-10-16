@@ -49,10 +49,16 @@ exclude = []  # exclude packages matching these glob patterns (empty by default)
 namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
 
 [project.scripts]
-diffpy-cmisas = "diffpy.cmisas.app:main"
+diffpy-cmisas = "diffpy.cmisas.cmisas_app:main"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements/pip.txt"]}
+
+[tool.pytest.ini_options]
+# Fail when cmisas source calls one of its own deprecated names.
+filterwarnings = [
+    "error:'diffpy\\.cmisas\\.:DeprecationWarning:diffpy\\.cmisas",
+]
 
 [tool.codespell]
 exclude-file = ".codespell/ignore_lines.txt"

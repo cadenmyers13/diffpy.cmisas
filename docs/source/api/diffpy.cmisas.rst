@@ -1,30 +1,68 @@
 :tocdepth: -1
 
-|title|
-=======
-
-.. |title| replace:: diffpy.cmisas package
+diffpy.cmisas package
+=====================
 
 .. automodule:: diffpy.cmisas
     :members:
     :undoc-members:
     :show-inheritance:
 
-Subpackages
------------
-
-.. toctree::
-   diffpy.cmisas.example_package
-
 Submodules
 ----------
 
-|module|
---------
+diffpy.cmisas.sasgenerator module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. |module| replace:: diffpy.cmisas.example_submodule module
+.. automodule:: diffpy.cmisas.sasgenerator
+    :members:
+    :undoc-members:
+    :show-inheritance:
 
-.. automodule:: diffpy.cmisas.example_submodule
+diffpy.cmisas.sasparser module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: diffpy.cmisas.sasparser
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+diffpy.cmisas.sasprofile module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: diffpy.cmisas.sasprofile
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+diffpy.cmisas.sasparameter module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: diffpy.cmisas.sasparameter
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+diffpy.cmisas.prcalculator module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: diffpy.cmisas.prcalculator
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+diffpy.cmisas.characteristicfunctions module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: diffpy.cmisas.characteristicfunctions
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+diffpy.cmisas.sasimport module
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. automodule:: diffpy.cmisas.sasimport
     :members:
     :undoc-members:
     :show-inheritance:
