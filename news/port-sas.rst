@@ -1,6 +1,6 @@
 **Added:**
 
-* No news added: Install the diffpy.srfit 3.4.0 rc in CI until 3.4.0 is on conda-forge.
+* No news added: Port the SAS code from diffpy.srfit 3.4.0 and install the srfit rc in CI; cmisas is unreleased.
 
 **Changed:**
 
