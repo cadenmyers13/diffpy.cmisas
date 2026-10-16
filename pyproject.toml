@@ -14,7 +14,7 @@ maintainers = [
 description = "The code of the SAS pack of the diffpy.cmi package."
 keywords = ['Small angle scattering', 'PDF', 'x-ray neutron']
 readme = "README.rst"
-requires-python = ">=3.11, <3.14"
+requires-python = ">=3.12, <3.15"
 classifiers = [
         'Development Status :: 5 - Production/Stable',
         'Environment :: Console',
@@ -25,9 +25,9 @@ classifiers = [
         'Operating System :: Microsoft :: Windows',
         'Operating System :: POSIX',
         'Operating System :: Unix',
-        'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
         'Programming Language :: Python :: 3.13',
+        'Programming Language :: Python :: 3.14',
         'Topic :: Scientific/Engineering :: Physics',
         'Topic :: Scientific/Engineering :: Chemistry',
 ]
@@ -49,10 +49,16 @@ exclude = []  # exclude packages matching these glob patterns (empty by default)
 namespaces = false  # to disable scanning PEP 420 namespaces (true by default)
 
 [project.scripts]
-diffpy-cmisas = "diffpy.cmisas.app:main"
+diffpy-cmisas = "diffpy.cmisas.cmisas_app:main"
 
 [tool.setuptools.dynamic]
 dependencies = {file = ["requirements/pip.txt"]}
+
+[tool.pytest.ini_options]
+# Fail when cmisas source calls one of its own deprecated names.
+filterwarnings = [
+    "error:'diffpy\\.cmisas\\.:DeprecationWarning:diffpy\\.cmisas",
+]
 
 [tool.codespell]
 exclude-file = ".codespell/ignore_lines.txt"
